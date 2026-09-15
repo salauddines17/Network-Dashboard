@@ -1,0 +1,15 @@
+services:
+
+  backend:
+
+    build: .
+
+    container_name: network_backend
+
+    ports:
+
+      - "5000:5000"
+
+    volumes:
+
+      - ./backend:/app

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Network Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Network Dashboard</h1>
+
+        <p>IT Network Device Management</p>
+
+    </header>
+
+
+    <main>
+
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Devices</h3>
+                <p id="totalDevices">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Online</h3>
+                <p id="onlineDevices">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Offline</h3>
+                <p id="offlineDevices">0</p>
+            </div>
+
+        </section>
+
+
+        <section class="add-device">
+
+            <h2>Add Network Device</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Device Name"
+            >
+
+            <input
+                type="text"
+                id="ip"
+                placeholder="IP Address"
+            >
+
+            <select id="deviceType">
+
+                <option value="Router">
+                    Router
+                </option>
+
+                <option value="Switch">
+                    Switch
+                </option>
+
+                <option value="Server">
+                    Server
+                </option>
+
+                <option value="NAS">
+                    NAS
+                </option>
+
+                <option value="Computer">
+                    Computer
+                </option>
+
+                <option value="Phone">
+                    Phone
+                </option>
+            </select>
+
+            <button onclick="addDevice()">
+                Add Device
+            </button>
+
+        </section>
+
+
+        <section>
+
+            <h2>Network Devices</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>IP Address</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="deviceTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+
+}
+
+header {
+
+    background: #1f2937;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+}
+
+.stats {
+
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+
+}
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    flex: 1;
+
+    box-shadow: 0 2px 8px
+                rgba(0,0,0,0.1);
+
+}
+
+.card p {
+
+    font-size: 30px;
+
+    margin-top: 10px;
+
+}
+
+.add-device {
+
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+
+}
+
+input,
+select {
+
+    padding: 12px;
+
+    margin: 10px 5px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+}
+
+button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background: #1d4ed8;
+
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background: white;
+
+}
+
+th,
+td {
+
+    padding: 15px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: left;
+
+}
+
+th {
+
+    background: #e5e7eb;
+
+}
